@@ -1,0 +1,149 @@
+\documentclass[10pt]{beamer}
+
+\usetheme{m}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{multicol}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{upgreek}
+
+ 
+\input{sunePreamble.tex}
+\input{listingsPreamble.tex}
+
+\title{App-udvikling}
+\subtitle{6. Lektion}
+\date{\today}
+\author{Sune Sylvest Nilausen}
+%\institute{Institute or miscellaneous information}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo/logo}}
+
+\begin{document}
+%\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+\maketitle
+
+\begin{frame}
+  \frametitle{Indholdsfortegnelse}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+%Forhenværende lektioner gik ud på at lære de første trin i at designe et produkt.
+%Altså at designe et app.
+
+\section{Opsummering fra sidst}
+
+\begin{frame}[fragile]
+ \frametitle{HTML Kode}
+
+\lstset{
+  language=html,
+  tagstyle=\color{editorBlue},
+  basicstyle={\small\ttfamily},
+  identifierstyle=\color{editorOrange},
+  keywordstyle=\color{editorPink},
+  commentstyle=\color{editorGray},
+  stringstyle=\color{editorPurple}
+}
+\begin{lstlisting}
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- Kommentar -->
+    <div id="box">
+      <p>Hello World</p>
+      <h1>Overskrift type 1</h1>
+      <h2>Overskrift type 2</h2>
+      <img src="html5.png" width="250px" height="250px">
+    </div>
+    <div>Test</div>
+  </body>
+</html>
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{HTML Syntax}
+		\includegraphics[width=\linewidth]{img/html-syntax.png}
+\end{frame}
+
+
+\begin{frame}[fragile]
+ \frametitle{CSS Kode}
+
+\lstset{
+  language=HTML5,
+  alsolanguage=CSS,
+  tagstyle=\color{editorBlue},
+  basicstyle={\small\ttfamily},
+  identifierstyle=\color{editorOrange},
+  keywordstyle=\color{editorPink},
+  commentstyle=\color{editorGray},
+  stringstyle=\color{editorPurple}
+}
+\begin{lstlisting}
+h1 { color: white;
+background: orange;
+border: 1px solid black;
+}
+body {background-color: white;
+color: black;
+border: 12px solid;
+}
+/* Kommentar */
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{CSS Syntax}
+		\includegraphics[width=\linewidth]{img/css-syntax.png}
+\end{frame}
+
+
+
+\section{Chrome Dev Editor!}
+\begin{frame}{Install it!}
+	install it!
+\end{frame}
+
+
+\section{HTML App}
+\begin{frame}{Hurtigt interface}
+	Sådan bruger du bootstrap, polymer, andre ting til hurtigt at lave interface.
+\end{frame}
+
+\begin{frame}{Opgave:}
+	1. Lav nogle opgaver \\
+	2. Lav interface til dit projekt.
+\end{frame}
+
+\section{CSS App}
+\begin{frame}{Opgave:}
+	1. Lav nogle opgaver \\
+	2. Lav styling til dit projekt.
+\end{frame}
+
+\section{Javascript App}
+\begin{frame}{Opgave:}
+	1. Lav nogle opgaver \\
+	2. Lav noget programstyring til dit projekt.
+\end{frame}
+
+\section{App med det hele}
+\begin{frame}{Opgave:}
+	1. Færdiggør dit projekt
+\end{frame}
+
+\plain{
+\url{http://io2014codelabs.appspot.com/static/codelabs/chrome-apps/#1}
+ }
+
+\plain{
+\url{http://io2014codelabs.appspot.com/static/codelabs/polymer-build-maps/#1}
+}
+ 
+
+\end{document}
