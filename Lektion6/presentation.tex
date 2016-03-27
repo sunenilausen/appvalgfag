@@ -102,6 +102,40 @@ border: 12px solid;
 		\includegraphics[width=\linewidth]{img/css-syntax.png}
 \end{frame}
 
+\begin{frame}[fragile]
+ \frametitle{JavaScript + HTML}
+ \lstset{
+  language=HTML,
+  alsolanguage=JavaScript,
+  tagstyle=\color{editorBlue},
+  basicstyle={\small\ttfamily},
+  identifierstyle=\color{editorOrange},
+  keywordstyle=\color{editorPink},
+  commentstyle=\color{editorGray},
+  stringstyle=\color{editorPurple}
+}
+\begin{lstlisting}
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Can Change Images</h1>
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+<p>Click the light bulb to turn on/off the light.</p>
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.gif";
+    } else {
+        image.src = "pic_bulbon.gif";
+    }
+}
+</script>
+</body>
+</html>
+\end{lstlisting}
+\end{frame}
+
 
 
 \section{Chrome Dev Editor!}
